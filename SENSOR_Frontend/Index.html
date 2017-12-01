@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html ng-app="Sensors">
+<head>
+    <meta charset="utf-8" />
+    <title>Riekerinc - Sensors</title>
+    <link href="Css/App.css" rel="stylesheet" />
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-default" style="margin-bottom:0px">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img id="logo" src="Image/Logo.png" />
+                    <strong id="logoMark">Total Solutions</strong>
+                </div>
+
+                <span class="navbar-brand">
+                     Sensor Portal
+                </span>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> JFK</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign Out</a></li>
+                </ul>
+            </div>
+        </nav> 
+        
+        <div class="container">
+            <div style="margin-bottom:10px;">
+                <ul id="naviBar" class="nav navbar-nav">
+                    <li><a href="#!/Notification">Notifictions</a></li>
+                    <li><a href="#!/Devices">Devices</a></li>
+                    <li><a href="#!/Admin">Admin</a></li>
+                </ul>
+            </div>
+            <br /><br />
+
+            <ng-view>
+                
+            </ng-view>
+        </div>
+
+        
+
+        <footer>Copyright &copy; Riekerinc.com</footer>
+    </div>
+    <!-- Required Angular.js Libraries -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <!--Sensors Angular file -->
+    <script src="Script/MyApp.js"></script>
+    <script src="Script/NotificationController.js"></script>
+    <script src="Script/DevicesController.js"></script>
+    <script src="Script/Sensors-Config.js"></script>
+    <script src="Script/AdminController.js"></script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+﻿<div>
+    <h3> Notifictions</h3>
+    <!--***********************************************************************************************************************************
+                                Alert section
+    ***********************************************************************************************************************************-->
+
+    <div class="col-md-12">
+        <div class="col-md-4">
+            <button class="textBtn" data-toggle="collapse" data-target="#alertTable" aria-expanded="true" aria-controls="alertTable">
+                <span class="glyphicon glyphicon-chevron-right rieker-color"></span>
+                Angle Alerts
+                <span class="badge progress-bar-warning">1</span>
+            </button>
+        </div>
+        <div class="col-md-2">
+            <input type="text" class="form-control" placeholder="Search for...">
+        </div>
+    </div>
+
+    <div id="alertTable" class="col-md-12 collapse in" >
+        <table class="table table-responsive">
+            <tr>
+                <th>Device Name</th>
+                <th>Start</th>
+                <th>End</th>
+                <th colspan="3" class="text-center"> 
+
+                    --------------------- X-Axis (Degrees) ---------------------<br />
+                    <p style="margin-bottom:0px"> <span class="pull-left">Upper Limit</span> <span class="text-center">Actual</span> <span class="pull-right">Lower Limit</span></p>  
+                </th>
+                <th colspan="3" class="text-center"> 
+                    --------------------- Y-Axis (Degrees) --------------------- <br /> 
+                    <p style="margin-bottom:0px"> <span class="pull-left">Upper Limit</span> <span class="text-center">Actual</span> <span class="pull-right">Lower Limit</span></p>             
+                </th>             
+            </tr>
+            <tr>
+                <td>Light Box2</td>
+                <td>11/7/2017 11:28 AM</td>
+                <td>Current</td>
+                <td class="text-center ">0.85</td>
+                <td class="text-center textAlert">0.91</td>
+                <td class="text-center">0.10</td>
+                <td class="text-center">1.80</td>
+                <td class="text-center">1.34</td>
+                <td class="text-center">1.20</td>
+
+                <td class="text-center"><button class="textBtnNull"> <span class="glyphicon glyphicon-upload"></span></button></td>
+            </tr>
+        
+        </table>
+    </div>
+    <!--***********************************************************************************************************************************
+                                Connection section
+    ***********************************************************************************************************************************-->
+
+
+    <div class="col-md-12" style="margin-top:5px;">
+        <div class="col-md-4">
+            <button class="textBtn" data-toggle="collapse" data-target="#connectionTable" aria-expanded="true" aria-controls="connectionTable">
+                <span class="glyphicon glyphicon-chevron-right rieker-color"></span>
+                Connection Alerts
+                <span class="badge progress-bar-warning">1</span>
+            </button>
+        </div>
+        <div class="col-md-2">
+            <input type="text" class="form-control" placeholder="Search for...">
+        </div>
+    </div>
+
+    <div id="connectionTable" class="col-md-12 collapse in" >
+        <table class="table table-responsive">
+            <tr>
+                <th>Device Type</th>
+                <th>Device Name</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Send Settings</th>
+                <th>Allowed Missed <br /> Responses</th>
+                <th>Missed Responses</th>
+            </tr>
+            <tr>
+                <td>Gateway</td>
+                <td>Light Box2</td>
+                <td>11/7/2017 11:28 AM</td>
+                <td>11/7/2017 05:56 PM</td>
+                <td>2 min</td>
+                <td>3</td>
+                <td>4</td>
+
+                <td class="text-center"><button class="textBtnNull"> <span class="glyphicon glyphicon-upload"></span></button></td>
+            </tr>
+
+        </table>
+    </div>
+    <!--***********************************************************************************************************************************
+                                Temperature section
+    ***********************************************************************************************************************************-->
+
+    <div class="col-md-12" style="margin-top:5px;">
+        <div class="col-md-4">
+            <button class="textBtn" data-toggle="collapse" data-target="#TempTable" aria-expanded="true" aria-controls="TempTable">
+                <span class="glyphicon glyphicon-chevron-right rieker-color"></span>
+                Temperature Alerts
+                <span class="badge progress-bar-warning">2</span>
+            </button>
+        </div>
+        <div class="col-md-2">
+            <input type="text" class="form-control" placeholder="Search for...">
+        </div>
+    </div>
+
+    <div id="TempTable" class="col-md-12 collapse in" >
+        <table class="table table-responsive">
+            <tr>
+                <th>Device Name</th>
+                <th>Start</th>
+                <th>End</th>
+                <th colspan="3" class="text-center">
+                    -------------- Temperature(°F) ----------------<br />
+                    <p style="margin-bottom:0px"> <span class="pull-left">Upper Limit</span> <span class="text-center">Actual</span> <span class="pull-right">Lower Limit</span></p>
+                </th>
+            </tr>
+            <tr>
+                <td>Light Box2</td>
+                <td>11/7/2017 11:28 AM</td>
+                <td>Current</td>
+                <td >80</td>
+                <td class="text-center textAlert">92</td>
+                <td class="text-center">-40</td>
+ 
+                <td class="text-center"><button class="textBtnNull"> <span class="glyphicon glyphicon-upload"></span></button></td>
+            </tr>
+
+            <tr>
+                <td>Light Box6</td>
+                <td>11/7/2017 11:28 AM</td>
+                <td>Current</td>
+                <td>80</td>
+                <td class="text-center textAlert">100</td>
+                <td class="text-center">-40</td>
+
+                <td class="text-center"><button class="textBtnNull"> <span class="glyphicon glyphicon-upload"></span></button></td>
+            </tr>
+
+        </table>
+    </div>
+    <!--***********************************************************************************************************************************
+                                Voltage section
+    ***********************************************************************************************************************************-->
+
+    <div class="col-md-12" style="margin-top:5px;">
+        <div class="col-md-4">
+            <button class="textBtn" data-toggle="collapse" data-target="#voltTable" aria-expanded="true" aria-controls="voltTable">
+                <span class="glyphicon glyphicon-chevron-right rieker-color"></span>
+                Voltage Alerts
+                <span class="badge progress-bar-warning">3</span>
+            </button>
+        </div>
+        <div class="col-md-2">
+            <input type="text" class="form-control" placeholder="Search for...">
+        </div>
+    </div>
+
+    <div id="voltTable" class="col-md-12 collapse in" >
+        <table class="table table-responsive">
+            <tr>
+                <th>Device Name</th>
+                <th>Start</th>
+                <th>End</th>
+                <th colspan="3" class="text-center">
+                    --------------------- Voltage (V) ---------------------<br />
+                    <p style="margin-bottom:0px"> <span class="pull-left">Upper Limit</span> <span class="text-center">Actual</span> <span class="pull-right">Lower Limit</span></p>
+                </th>
+            </tr>
+            <tr>
+                <td>KOOBYE56</td>
+                <td>11/7/2017 11:28 AM</td>
+                <td>Current</td>
+                <td>22</td>
+                <td class="text-center textAlert">10</td>
+                <td class="text-center">11</td>
+
+                <td class="text-center"><button class="textBtnNull"> <span class="glyphicon glyphicon-upload"></span></button></td>
+            </tr>
+            <tr>
+                <td>KOOBYE11</td>
+                <td>11/7/2017 11:28 AM</td>
+                <td>Current</td>
+                <td>22</td>
+                <td class="text-center textAlert">88</td>
+                <td class="text-center">11</td>
+
+                <td class="text-center"><button class="textBtnNull"> <span class="glyphicon glyphicon-upload"></span></button></td>
+            </tr>
+            <tr>
+                <td>KOOBYE22</td>
+                <td>11/7/2017 11:28 AM</td>
+                <td>Current</td>
+                <td>22</td>
+                <td class="text-center textAlert">99</td>
+                <td class="text-center">11</td>
+
+                <td class="text-center"><button class="textBtnNull"> <span class="glyphicon glyphicon-upload"></span></button></td>
+            </tr>
+        </table>
+    </div>
+    <!--***********************************************************************************************************************************
+                                Inactivity section
+    ***********************************************************************************************************************************-->
+
+    <div class="col-md-12" style="margin-top:5px;">
+        <div class="col-md-4">
+            <button class="textBtn" data-toggle="collapse" data-target="#inactivTable" aria-expanded="true" aria-controls="inactivTable">
+                <span class="glyphicon glyphicon-chevron-right rieker-color"></span>
+                Inactivity Alerts
+                <span class="badge progress-bar-warning">1</span>
+            </button>
+        </div>
+        <div class="col-md-2">
+            <input type="text" class="form-control" placeholder="Search for...">
+        </div>
+    </div>
+
+    <div id="inactivTable" class="col-md-12 collapse in" >
+        <table class="table table-responsive">
+            <tr>
+                <th>Device Name</th>
+                <th>Start</th>
+                <th>End</th>
+                <th colspan="3" class="text-center">
+
+                    --------------------- X-Axis (Degrees) ---------------------<br />
+                    <p style="margin-bottom:0px"> <span class="pull-left">Upper Limit</span> <span class="text-center">Actual</span> <span class="pull-right">Lower Limit</span></p>
+                </th>
+                <th colspan="3" class="text-center">
+                    --------------------- Y-Axis (Degrees) --------------------- <br />
+                    <p style="margin-bottom:0px"> <span class="pull-left">Upper Limit</span> <span class="text-center">Actual</span> <span class="pull-right">Lower Limit</span></p>
+                </th>
+            </tr>
+            <tr>
+                <td>Light Box2</td>
+                <td>11/7/2017 11:28 AM</td>
+                <td>Current</td>
+                <td class="text-center ">0.85</td>
+                <td class="text-center textAlert">0.91</td>
+                <td class="text-center">0.10</td>
+                <td class="text-center">1.80</td>
+                <td class="text-center">1.34</td>
+                <td class="text-center">1.20</td>
+                <td class="text-center"><button class="textBtnNull"> <span class="glyphicon glyphicon-upload"></span></button></td>
+
+            </tr>
+
+        </table>
+    </div>
+    <!--***********************************************************************************************************************************
+                                History section
+    ***********************************************************************************************************************************-->
+
+    <div class="col-md-12" style="margin-top:5px;">
+        <div class="col-md-4">
+            <button class="textBtn" data-toggle="collapse" data-target="#historyTable" aria-expanded="true" aria-controls="historyTable">
+                <span class="glyphicon glyphicon-chevron-right rieker-color"></span>
+                Alert History
+                <span class="badge progress-bar-warning">5</span>
+            </button>
+        </div>
+        <div class="col-md-2">
+            <input type="text" class="form-control" placeholder="Search for...">
+        </div>
+    </div>
+
+    <div id="historyTable" class="col-md-12 collapse in">
+        <table class="table table-responsive">
+            <tr>
+                <th>Device Name</th>
+                <th>Start</th>
+                <th>End</th>
+                <th colspan="3" class="text-center">
+
+                    --------------------- X-Axis (Degrees) ---------------------<br />
+                    <p style="margin-bottom:0px"> <span class="pull-left">Upper Limit</span> <span class="text-center">Actual</span> <span class="pull-right">Lower Limit</span></p>
+                </th>
+                <th colspan="3" class="text-center">
+                    --------------------- Y-Axis (Degrees) --------------------- <br />
+                    <p style="margin-bottom:0px"> <span class="pull-left">Upper Limit</span> <span class="text-center">Actual</span> <span class="pull-right">Lower Limit</span></p>
+                </th>
+            </tr>
+            <tr>
+                <td>Light Box2</td>
+                <td>11/7/2017 11:28 AM</td>
+                <td>Current</td>
+                <td class="text-center ">0.85</td>
+                <td class="text-center textAlert">0.91</td>
+                <td class="text-center">0.10</td>
+                <td class="text-center">1.80</td>
+                <td class="text-center">1.34</td>
+                <td class="text-center">1.20</td>
+            </tr>
+
+        </table>
+
+        <table class="table table-responsive">
+            <tr>
+                <th>Device Name</th>
+                <th>Start</th>
+                <th>End</th>
+                <th colspan="3" class="text-center">
+                    -------------- Temperature(°F) ----------------<br />
+                    <p style="margin-bottom:0px"> <span class="pull-left">Upper Limit</span> <span class="text-center">Actual</span> <span class="pull-right">Lower Limit</span></p>
+                </th>
+            </tr>
+            <tr>
+                <td>Light Box2</td>
+                <td>11/7/2017 11:28 AM</td>
+                <td>Current</td>
+                <td>80</td>
+                <td class="text-center textAlert">92</td>
+                <td class="text-center">-40</td>
+    
+            </tr>
+
+            <tr>
+                <td>Light Box6</td>
+                <td>11/7/2017 11:28 AM</td>
+                <td>Current</td>
+                <td>80</td>
+                <td class="text-center textAlert">100</td>
+                <td class="text-center">-40</td>
+            </tr>
+        </table>
+
+        <table class="table table-responsive">
+            <tr>
+                <th>Device Name</th>
+                <th>Start</th>
+                <th>End</th>
+                <th colspan="3" class="text-center">
+                    --------------------- Voltage (V) ---------------------<br />
+                    <p style="margin-bottom:0px"> <span class="pull-left">Upper Limit</span> <span class="text-center">Actual</span> <span class="pull-right">Lower Limit</span></p>
+                </th>
+            </tr>
+            <tr>
+                <td>KOOBYE56</td>
+                <td>11/7/2017 11:28 AM</td>
+                <td>Current</td>
+                <td>22</td>
+                <td class="text-center textAlert">10</td>
+                <td class="text-center">11</td>
+
+
+            </tr>
+            <tr>
+                <td>KOOBYE11</td>
+                <td>11/7/2017 11:28 AM</td>
+                <td>Current</td>
+                <td>22</td>
+                <td class="text-center textAlert">88</td>
+                <td class="text-center">11</td>
+
+            </tr>
+            <tr>
+                <td>KOOBYE22</td>
+                <td>11/7/2017 11:28 AM</td>
+                <td>Current</td>
+                <td>22</td>
+                <td class="text-center textAlert">99</td>
+                <td class="text-center">11</td>
+
+            </tr>
+        </table>
+    </div>
+    
+    <!--***********************************************************************************************************************************
+                                 Section Done
+    ***********************************************************************************************************************************-->
+
+
+    <br />
+</div>

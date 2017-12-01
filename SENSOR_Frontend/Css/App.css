@@ -1,0 +1,80 @@
+﻿footer {
+    padding: 1em;
+    clear: left;
+    text-align: center;
+}
+#logo {
+    padding-top:2px;
+    height: 50px;
+}
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 35px !important;
+    font-style: italic;
+}
+
+#logoMark {
+    position: absolute;
+    bottom:-2px;
+    margin-left: 2px;
+    color: goldenrod;
+    font-size: 12px;
+    font-style: oblique;
+}
+
+.textBtn {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.textBtnNull {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.rieker-color {
+    color: #009973;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left:20px;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#naviBar > li > a {
+    font-size: 20px;
+    color: #009973;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.textUnderline {
+    border-bottom:  solid 2px #009973;
+}
+
+.textAlert{
+    font-weight: bold;
+    color:red;
+}
