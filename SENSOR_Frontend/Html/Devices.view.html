@@ -1,10 +1,86 @@
-﻿<div style="width:100%; height:900px;">
-    <div style="width:100%; height:50%; background-color:greenyellow">
+﻿<div style="width:100%; height:700px;" ng-controller="DevicesController as dc">
+    <div style="width:100%; height:50%; padding:5px;  overflow-y: scroll; border-bottom: 5px solid #ddd; border-top: 5px solid #ddd;">
+        <div class="col-md-12">
+            <div class="col-md-1">
+                <p style="font-size: 24px;">
+                    Devices
+                </p>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control" placeholder="Search for...">
+            </div>
+
+            <div class="btn-group" role="group" aria-label="" style="margin-left:20px">
+                <button type="button" class="btn btn-default">Group</button>
+                <button type="button" class="btn btn-default">Gateway</button>
+                <button type="button" class="btn btn-default">Sensor</button>
+            </div>
+
+            <div class="btn-group" role="group" aria-label="" style="margin-left:20px">
+                <button type="button" class="btn btn-default">Alary Only</button>
+                <button type="button" class="btn btn-default">Response Only</button>
+            </div>
+
+            <button type="button" class="btn btn-default pull-right">Clear Selection</button>
+
+        </div>
+
+            <canvas id="line" width="400" height="100" class="chart chart-line" chart-data="dc.data" 
+                    chart-labels="dc.labels" chart-series="dc.series" chart-options="dc.options"
+                    chart-dataset-override="dc.datasetOverride" chart-click="dc.onClick" chart-colors="dc.colors"></canvas>
+
+
+      
+
 
     </div>
 
-    <div style="width:100%; height:50%; background-color: aquamarine">
+    <div style="width:100%; height:50%; overflow-y: scroll; padding:5px;">
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> Map
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Alarms
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Details
+            </label>
+        </div>
 
+
+
+
+
+
+
+        <div class="btn-group" role="group" aria-label="">
+            <button type="button" class="btn btn-default">Map</button>
+            <button type="button" class="btn btn-default">Alarms</button>
+            <button type="button" class="btn btn-default">Details</button>
+        </div>
+
+        <div class="btn-group" role="group" aria-label="" style="margin-left:20px">
+            <button type="button" class="btn btn-default">Graph</button>
+            <button type="button" class="btn btn-default">Table</button>
+            <button type="button" class="btn btn-default">Report</button>
+        </div>
+
+        <button type="button" class="btn btn-default pull-right">Edit</button>
+
+        <div style="padding:5px;">
+            <ng-map zoom="16" center="[39.9897194, -75.579071]">
+                <marker ng-repeat="position in dc.positions"
+                        icon="{{dc.image}}"
+                        shape="{{dc.shape}}"
+                        title="{{position[0]}}"
+                        position="{{position[1]}}, {{position[2]}}"
+                        z-index="{{position[3]}}"
+                        on-click="dc.click()">
+
+                </marker>
+            </ng-map>
+        </div>
     </div>
     <!--<h3>Devices</h3>
     {{message}} 123-->

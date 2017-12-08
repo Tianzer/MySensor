@@ -1,4 +1,4 @@
-﻿angular.module('Sensors', ['Sensors.cfg', 'ngCookies', 'ngRoute'])
+﻿angular.module('Sensors', ['Sensors.cfg', 'ngCookies', 'ngRoute', 'ngMap', 'chart.js'])
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
         $routeProvider
             .when('/Notification', {
@@ -18,15 +18,8 @@
                 templateUrl: 'Html/Admin.view.html',
                 controllerAs: 'dc'
             })
-
-            //// example: http://localhost:60764/Index.html#!/confirmMember/asdas/ssss
-            //.when('/confirmMember/:param1/:param2', {
-            //    controller: 'ConfirmController',
-            //    templateUrl: 'Html/confirmMember.view.html',
-            //    controllerAs: 'cc'
-            //})
-
             .otherwise({ redirectTo: '/Notification' });
+
     }]);
 
 $('#naviBar > li').on('click', function (e) {
